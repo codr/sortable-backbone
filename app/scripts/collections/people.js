@@ -9,7 +9,7 @@ Table.Collections = Table.Collections || {};
 
         model: Table.Models.People,
 
-        url: '/data/people.json',
+        url: 'data/people.json',
 
         comparator: 'Name',
 
