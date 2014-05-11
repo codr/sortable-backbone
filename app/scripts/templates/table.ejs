@@ -1,0 +1,20 @@
+<table class="table">
+  <tr>
+    <th><a href="" data-sort="Name">Name</a></th>
+    <th><a href="" data-sort="City">City</a></th>
+    <th><a href="" data-sort="Province">Province</a></th>
+    <th><a href="" data-sort="Country">Country</a></th>
+    <th><a href="" data-sort="Birthday">Birthday</a></th>
+    <th><a href="" data-sort="Age">Age</a></th>
+  </tr>
+  <% _.each(items, function(person) { %>
+    <tr>
+      <td><%= person.Name %></td>
+      <td><%= person.City %></td>
+      <td><%= person.Province %></td>
+      <td><%= person.Country %></td>
+      <td><%= (new Date(person.Birthday)).toDateString() %></td>
+      <td><%= person.Age %></td>
+    </tr>
+  <% }); %>
+</table>
